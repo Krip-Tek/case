@@ -119,3 +119,8 @@ git restore --staged <file>
 git reset --hard <commit hash>
 ```
 
+Команда git restore <file> позволяет убрать изменения в файле даже если он не добавлен в steged и tracked
+
+```
+git restore <file>
+```
