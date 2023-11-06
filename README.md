@@ -94,8 +94,13 @@ graph LR;
 	stated -- "git commit" --> tracked/commited;
 	tracked/commited -- "changes" --> modified;
 	modified -- "git add" --> stated;
-
-
 ```
 
  
+Существует возможность исправить неверно сделанный коммит.
+
+Для этого используется команда 
+
+```
+git commit --amend
+```
