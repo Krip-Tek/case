@@ -42,3 +42,21 @@ git init
  Хеш это способ преобразовать данные и получить их *"отпечаток"*
  
  Хеш хранится в git в виде таблицы. Для каждого коммита хеш уникален.
+ 
+Слудеющее о чем напишем это log
+
+команда для вызова лога 
+
+``` 
+git log
+```
+
+Пример лога
+
+```
+commit e83c5163316f89bfbde7d9ab23ca2e25604af290
+Author: Linus Torvalds <torvalds@linux-foundation.org>
+Date:   Thu Apr 7 15:13:13 2005 -0700
+
+    Initial revision of "git", the information manager from hell
+```
