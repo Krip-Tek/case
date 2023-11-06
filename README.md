@@ -112,3 +112,10 @@ git commit --amend
 ```
 git restore --staged <file>
 ```
+
+Если необходимо откатиться до определенного коммита назад то можно применить команду
+
+```
+git reset --hard <commit hash>
+```
+
