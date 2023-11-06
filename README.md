@@ -84,7 +84,18 @@ git log --oneline
 4. ___modified___ - файл версия которой уже находится в репозитории и его подготовленная
  версия отличается содержанием.
 
+Рассмотрим схему статусов файлов git
+
+```mermaid
+%% описание схемы статусов файлов git
+graph LR;
+	
+	untracked -- "git add" --> stated;
+	stated -- "git commit" --> tracked/commited;
+	tracked/commited -- "changes" --> modified;
+	modified -- "git add" --> stated;
 
 
+```
 
  
