@@ -91,7 +91,7 @@ git log --oneline
 graph LR;
 	
 	untracked -- "git add" --> stated;
-	stated -- "git commit" --> tracked/commited;
+	staged -- "git commit" --> tracked/commited;
 	tracked/commited -- "changes" --> modified;
 	modified -- "git add" --> stated;
 ```
@@ -103,4 +103,12 @@ graph LR;
 
 ```
 git commit --amend
+```
+
+Есть возможность убрать подготовленный файл из состояния staged
+
+для этого применяется команда 
+
+```
+git restore --staged <file>
 ```
